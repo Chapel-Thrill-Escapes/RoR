@@ -39,4 +39,4 @@ The analysis consists of several parts:
 2. **Revenue Calculation for Specific Periods**: 
    - Revenue up to the release of "Ramses in Wonderland" and "The Lost Tar Heel".
    - Room-over-Room growth calculations for these periods.
-3. **Di
+3. **Displaying Results**: The results are formatted to display revenue and growth metrics clearly, with values rounded and presented in a user-friendly format.
