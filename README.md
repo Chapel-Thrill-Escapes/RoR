@@ -3,9 +3,6 @@
 ## Project Overview
 This project involves analyzing transaction data to understand sales trends over several years. It calculates annual sales, revenue up to specific product releases, and growth metrics. The analysis is performed using R, with a focus on data manipulation and aggregation tasks.
 
-## Date of Analysis
-The analysis is dynamically set to run on the current date, using `Sys.Date()` to ensure the data reflects the most up-to-date information available.
-
 ## Dependencies
 The project relies on several R packages for data manipulation, reading, and environmental management:
 - dplyr
