@@ -32,6 +32,14 @@ data$Gross.Sales <- as.numeric(gsub(",", "", gsub("\\$", "", data$Gross.Sales)))
 
 ```{r}
 sum_by_year <- aggregate(Gross.Sales ~ Year, data = data, FUN = sum)
-#print(sum_by_year)
-
+# Revenue up to the release of Ramses in Wonderland
+subset_data <- subset(sum_by_year, Year >= 2019 & Year <= 2022)
+sales <- sum(subset_data$Gross.Sales)
+paste0("Revenue up to the release of Ramses in Wonderland is $", formatC(sales, format = "f", digits = 2))
+# Revenue up to the release of The Lost Tar Heel
+paste0("Revenue up to the release of The Lost Tar Heel is $",  formatC(sum_by_year[5, 2], format = "f", digits = 2))
+paste0("Room-over-Room growth for Ramses in Wonderland is ", round((sum_by_year[5, 2] / sales - 1) * 100, 2) - 1, "%")
+# Revenue since the release of The Lost Tar Heel
+paste0("Revenue since the release of The Lost Tar Heel is $", formatC(sum_by_year[6, 2], format = "f", digits = 2))
+paste0("Room-over-Room growth for The Lost Tar Heel is ", round((sum_by_year[6, 2] / sum_by_year[5, 2] - 1) * 100, 2), "%")
 ```
