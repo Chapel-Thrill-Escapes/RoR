@@ -1,4 +1,4 @@
-# RoR Data Science
+# Room-over-Room (RoR) Growth
 
 ## Project Overview
 This project involves analyzing transaction data to understand sales trends over several years. It calculates annual sales, revenue up to specific product releases, and growth metrics. The analysis is performed using R, with a focus on data manipulation and aggregation tasks.
